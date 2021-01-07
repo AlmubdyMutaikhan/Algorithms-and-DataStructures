@@ -1,11 +1,11 @@
-package com.company;
+package com.company.LinkedList.Implementation;
 
 public class Node {
     public int val;
     public Node next;
 
     Node() {}
-    Node(int val) {
+    public Node(int val) {
         this.val = val;
         this.next = null;
     }

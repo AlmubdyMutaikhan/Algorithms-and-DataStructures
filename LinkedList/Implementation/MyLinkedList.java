@@ -1,4 +1,5 @@
-package com.company;
+package com.company.LinkedList.Implementation;
+
 
 /**
  * LL - Linked List
@@ -111,6 +112,27 @@ public class MyLinkedList {
             }
         }
     }
+
+    public void reverseLinkedList() {
+        /** Iterative approach
+         * Time Complexity O(n) // As we traverse from head till the last node ;)
+         * Space Complexity O(1) // As every node changes each other and stack doesnt raise ;)
+         * */
+        // init temp nodes
+        Node prev = null;
+        Node curr = head;
+        Node next = null;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        head = prev;
+    }
+
 }
 
 /**

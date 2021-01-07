@@ -1,4 +1,4 @@
-package com.company;
+package com.company.LinkedList.Implementation;
 
 import java.util.Scanner;
 
@@ -23,7 +23,8 @@ public class Main {
 
         // Output LL ;)
         linkedList.print();
-
+        linkedList.reverseLinkedList();
+        linkedList.print();
         // Removing node methods/operations
         linkedList.removeTail();
         linkedList.removeHead();
